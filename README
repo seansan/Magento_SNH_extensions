@@ -1,0 +1,27 @@
+
+GOAL
+====
+Provide easy access to simple and very common code enhancements as seen on blogs, twitter, stackoverflow and others. Simple enhancements that some or many people like but aren't easy to implement for non-coders. Another goal is to add all-to-one. In the future we hope to offer 1 configuration tab where many or all of the functionlaity can be turned on or off.
+
+CURRENT CODING
+==============
+Currently contains the following 
+
+1. Ship, Mail and Invoice: Ship, email the customer and invoice the order by selecting orders and action with 1 click. A PDF is generated on success.
+2. Applycoupon: Activate coupon code by entering the website via a unique URL/URI. Ability to redirect to correct product page.
+
+HELP?
+=====
+Very appreciated. It's simple to say that this will only work of others add functionality, or improve current code. So create a pull request and get you code in now!
+
+FUTURE WISHES
+=============
+- Add system.xml config to turn on and off individual elements. All default to off.
+- Provide explanation to functionality in config
+- Of done, merge all functionality in 1 extension
+
+- Add extension functionality to enable or disable certain shiping methods in frontend and/or backend. For now start with one or two simple methods, 
+Discussed here: http://stackoverflow.com/questions/9941784/magento-how-do-i-manual-order-backend-free-shipping-actually-pickup
+
+- Add extension functionality to enable dynamic messsages
+Discussed here: http://inchoo.net/ecommerce/magento/styling-magento-global-messages/
