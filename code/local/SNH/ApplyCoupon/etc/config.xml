@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SNH_ApplyCoupon>
+            <version>0.1.0</version>
+        </SNH_ApplyCoupon>
+    </modules>
+
+
+	<frontend>
+		<events>
+			<checkout_cart_product_add_after>  
+			<observers>  
+				<applyCouponEvent>
+					<type>singleton</type>  
+					<class>SNH_ApplyCoupon_Model_Observer</class>    
+					<method>applyCouponEvent</method>            
+				</applyCouponEvent>              
+			</observers>  
+			</checkout_cart_product_add_after>
+		</events>
+		
+		<routers>
+			<applycoupon>
+				<use>standard</use>
+				<args>
+					<module>SNH_ApplyCoupon</module>
+					<frontName>applycoupon</frontName>
+				</args>
+			</applycoupon>
+		</routers>
+	
+	</frontend>
+
+
+	<global>
+		<models>
+			<applycoupon>
+			   <class>SNH_ApplyCoupon_Model</class>
+			</applycoupon>
+		</models>
+		
+	</global>
+
+  </config>
+
